@@ -1,0 +1,50 @@
+﻿@model List<CadastroModel>
+@{
+    ViewData["Title"] = "Cadastro";
+}
+<div class="text-center">
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a class="btn btn-primary" role="button" asp-controller="Cadastro" asp-action="Criar">Adicionar novo usuário</a>
+    </div>
+<br>
+<br/>
+
+<h3 class="display-4">Listagem de Cadastro</h3>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Login</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Perfil</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+        @if(Model != null && Model.Any())
+            {
+                foreach (CadastroModel cadastro in Model)
+                {
+                        <tr>
+      <th scope="row">@cadastro.Id</th>
+      <td>@cadastro.Login</td>
+      <td>@cadastro.Name</td>
+      <td>@cadastro.Perfil</td>
+            <td>
+          <div class="btn-group" role="group">
+              <a role="button" class="btn btn-primary" asp-route-id="@cadastro.Id" asp-controller="Cadastro" asp-action="Editar">Editar</a>
+              <a role="button" class="btn btn-danger" asp-route-id="@cadastro.Id" asp-controller="Cadastro" asp-action="ApagarConfirmar">Apagar</a>
+          
+         </div>
+      </td>
+    </tr>
+                }
+            }
+
+
+        </tbody>
+    </table>
+
+</div>

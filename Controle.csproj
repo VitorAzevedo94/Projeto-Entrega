@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>e0507ea9-c94a-4a47-bcba-4f88e5289365</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="3.0.50813.1" />
+    <PackageReference Include="Microsoft.AspNet.Razor" Version="1.0.20105.408" />
+	  <PackageReference Include="EntityFramework" Version="4.1.10331" />
+	  <PackageReference Include="Microsoft.AspNet.Mvc" Version="3.0.50813.1" />
+	  <PackageReference Include="Microsoft.AspNet.Razor" Version="1.0.20105.408" />
+	  <PackageReference Include="Microsoft.AspNet.WebPages" Version="1.0.20105.408" />
+	  <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.3" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.0-preview.2.22153.1" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.0-preview.2.22153.1">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+	  </PackageReference>
+	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0-preview.2.22153.1" />
+	  <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.2.9" />
+	  <PackageReference Include="Microsoft.Build.Tasks.Git" Version="1.1.1">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+	  </PackageReference>
+	  <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+	  </PackageReference>
+	  <PackageReference Include="Microsoft.ServiceHub.Framework" Version="3.1.2036" />
+	  <PackageReference Include="Microsoft.NETCore.Windows.ApiSets" Version="1.0.1" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.3" />
+	  <PackageReference Include="EntityFrameworkCore.DataEncryption" Version="3.0.1" />
+	  <PackageReference Include="EntityFrameworkCore.Data.Repository" Version="6.0.2" />
+	  <PackageReference Include="EntityFrameworkCore.Data.QueryBuilder" Version="6.0.2" />
+	  <PackageReference Include="NuGet.Frameworks" Version="6.1.0" />
+	  <PackageReference Include="NuGet.Common" Version="6.1.0" />
+	  <PackageReference Include="NuGet.Packaging" Version="6.1.0" />
+	  <PackageReference Include="NuGet.Configuration" Version="6.1.0" />
+	  <PackageReference Include="NuGet.Packaging.Core" Version="6.1.0" />
+	  <PackageReference Include="NuGet.LibraryModel" Version="6.1.0" />
+	  <PackageReference Include="NuGet.ProjectModel" Version="6.1.0" />
+	  <PackageReference Include="NuGet.DependencyResolver.Core" Version="6.1.0" />
+	  <PackageReference Include="NuGet.Versioning" Version="6.1.0" />
+	  <PackageReference Include="NuGet.Protocol" Version="6.1.0" />
+	  <PackageReference Include="NuGet.Commands" Version="6.1.0" />
+	  <PackageReference Include="NuGet.Resolver" Version="6.1.0" />
+	  <PackageReference Include="NuGet.Protocol.Core.v3" Version="4.3.0-beta1-2418" />
+  </ItemGroup>
+
+</Project>
