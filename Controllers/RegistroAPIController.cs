@@ -18,11 +18,12 @@ namespace Controle.Controllers
         {
             List<CadastroModel> lst = new List<CadastroModel>();
             CadastroModel cadastro = new CadastroModel();
-            {
-
-            }
-
+           {
+           }
             return lst;
         }
+        string fileName= "Relatorio.json"
+        string jsonString = JsonSerializer.Serialize(Relatorio);
+        Console.WriteLine(jsonString);
     }
 }
