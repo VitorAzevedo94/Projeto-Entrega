@@ -1,3 +1,20 @@
-{
+//Json do relatório  de usuários 
 
-}
+var Relatorio =new
+{
+  Id = "id",
+  Login = "login",
+  Nome = "name",
+  Perfil = "perfil",
+};
+
+string jsonData = JsonConvert.SerializeObject(Relatorio);
+Console.WriteLine(jsonData);
+JObject jsonObject = JObject.Parse(jsonData);
+
+//resultado
+
+Console.WriteLine((string)jsonObject["Id"]);
+Console.WriteLine((string)jsonObject["Login"]);
+Console.WriteLine((string)jsonObject["Name"]);
+Console.WriteLine((string)jsonObject["Perfil"]);
